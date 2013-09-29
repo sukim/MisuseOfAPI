@@ -41,8 +41,6 @@ app.configure('development', function(){
 var routes = require('./routes/index.js');
 app.get('/', routes.index);
 
-app.get("/opentok", routes.opentok);
-
 // create NodeJS HTTP server using 'app'
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

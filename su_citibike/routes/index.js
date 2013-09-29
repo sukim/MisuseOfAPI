@@ -12,11 +12,7 @@ exports.index = function(req, res) {
 	
 	console.log("main page requested");
 	var templateData = {
-		pageTitle : 'Just another normal site'
+		pageTitle : 'Misuse of CitiBike'
 	};
 	res.render('index.html', templateData);
-}
-
-exports.opentok = function(req, res) {
-	res.render("opentok.html");
 }
