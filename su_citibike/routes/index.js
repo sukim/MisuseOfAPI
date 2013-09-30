@@ -12,7 +12,7 @@ exports.index = function(req, res) {
 	
 	console.log("main page requested");
 	var templateData = {
-		pageTitle : 'Misuse of CitiBike'
+		pageTitle : 'Sign Up for a CitiBike Spinning Class!'
 	};
 	res.render('index.html', templateData);
 }
