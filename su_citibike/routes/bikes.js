@@ -35,6 +35,20 @@ citibike.getStations(null, function(data) {
 
 }
   console.log(maxStation);
+
+  exports.index = function(req, res) {
+	
+	console.log(maxStation);
+	console.log("maxStation");
+	var maxBikeData = {
+		maxBikeNumber : maxStation["availableBikes"] ;
+		CitiMaxStation.lat: maxStation["latitude"];
+		CitiMaxStation.lng: maxStation["longitude"]
+	};
+	res.render('index.html', templateData);
+}
+
+
 /**
   var minStation;
   for (var i = data["results"].length - 1; i >= 0; i--) {
@@ -56,19 +70,5 @@ citibike.getStations(null, function(data) {
   	  console.log(minStation["availableBikes"] );
   };
   console.log(minStation);
-});
-*/
-/** Retrieves Citibike Branches JSON Data and prints to console */
-/*
-citibike.getBranches(null, function(data) {
-  console.log("Getting Citibike Branches...");
-  console.log(data);
-});
-*/
-/**  Retrieves Citibike Helmets JSON Data and prints to console */
-/*
-citibike.getHelmets(null, function(data) {
-  console.log("Getting Citibike Helmets...");
-  console.log(data);
 });
 */

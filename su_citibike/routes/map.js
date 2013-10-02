@@ -1,5 +1,3 @@
-<!-- START OF THE GOOD STUFF -->
- 
 <!-- Load the Google Maps JS API. Your Google maps key will be rendered. -->
 
 
@@ -9,6 +7,8 @@
   var markers = [];
  
   function initialize() {
+
+    console.log('map::initialize');
  
     // create the geocoder
     geocoder = new google.maps.Geocoder();
